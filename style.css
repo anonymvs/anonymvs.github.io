@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header .title {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+header .contact {
+    font-size: 0.95em;
+    opacity: 0.85;
+}
+
+main {
+    background: white;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #667eea;
+}
+
+.about {
+    margin-bottom: 40px;
+}
+
+.about p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.projects {
+    margin-top: 40px;
+}
+
+.project-item {
+    background: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-left: 4px solid #667eea;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+.project-item h3 {
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+}
+
+.project-item .duration {
+    color: #667eea;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.project-item p {
+    color: #555;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.loading {
+    text-align: center;
+    color: #667eea;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .project-item {
+        padding: 15px;
+    }
+}
